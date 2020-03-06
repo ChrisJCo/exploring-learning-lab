@@ -1,0 +1,16 @@
+title: Exploring Learning Lab
+description: Testing and Exploring Learning Lab
+template:
+  repo: exploring-learning-lab-template
+  name: exploring-learning-lab
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
